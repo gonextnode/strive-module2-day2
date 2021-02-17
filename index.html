@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and linked to EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4 classes to render the page.
+- Use correctly containers and rows in order to achieve a great display.
+
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+
+NOTE:
+Most of the times, even the most expert of designers needs inspiration.
+Spend 30 minutes surfing the web and searching for the way of rapresenting album that you like the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Sansita+Swashed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-zig-zag">
+    <main class="main-content container">
+      <div class="container">
+        <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must be linked to every section in your page
+        -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img alt="Brand" src="assets/navlogo.png" />
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href="#fave"
+                    >Fave Albums <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#reviews"
+                    >Reviews <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#worst"
+                    >Wall of Shame <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#fan"
+                    >Fan Zone<span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#art"
+                    >Album Art <span class="sr-only">(current)</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+
+      <!-- spacer -->
+      <div class="spacer"></div>
+
+      <!-- EXERCISE 3
+
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller window)
+            - 2 albums per row when you are on a small screen
+        -->
+      <section id="fave" class="favorite-albums container">
+        <h2 class="">Favorite Albums</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="thumbnail h">
+                <img
+                  src="./assets/franky.jpg"
+                  alt="frankie goes to hollywood album art"
+                />
+                <div class="caption">
+                  <h3>Frankie Goes Hollywood</h3>
+                  <p>
+                    Frankie Goes to Hollywood were a English band formed in
+                    Liverpool, England, in the 1980s. The group was fronted by
+                    Holly Johnson, with Paul Rutherford, Peter Gill, Mark
+                    O'Toole and Brian Nash.
+                  </p>
+                  <p>
+                    <a href="#" class="btn btn-default" role="button">Review</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <img
+                  src="./assets/indeep.jfif"
+                  alt="frankie goes to hollywood album art"
+                />
+                <div class="caption">
+                  <h3>Indeep</h3>
+                  <p>
+                    Frankie Goes to Hollywood were a English band formed in
+                    Liverpool, England, in the 1980s. The group was fronted by
+                    Holly Johnson, with Paul Rutherford, Peter Gill, Mark
+                    O'Toole and Brian Nash.
+                  </p>
+                  <p>
+                    <a href="#" class="btn btn-default" role="button">Review</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <img
+                  src="./assets/inxs.jpg"
+                  alt="frankie goes to hollywood album art"
+                />
+                <div class="caption">
+                  <h3>INXS</h3>
+                  <p>
+                    Frankie Goes to Hollywood were a English band formed in
+                    Liverpool, England, in the 1980s. The group was fronted by
+                    Holly Johnson, with Paul Rutherford, Peter Gill, Mark
+                    O'Toole and Brian Nash.
+                  </p>
+                  <p>
+                    <a href="#" class="btn btn-default" role="button">Review</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <img
+                  src="./assets/phill.png"
+                  alt="frankie goes to hollywood album art"
+                />
+                <div class="caption">
+                  <h3>No Jacket Required</h3>
+                  <p>
+                    Frankie Goes to Hollywood were a English band formed in
+                    Liverpool, England, in the 1980s. The group was fronted by
+                    Holly Johnson, with Paul Rutherford, Peter Gill, Mark
+                    O'Toole and Brian Nash.
+                  </p>
+                  <p>
+                    <a href="#" class="btn btn-default" role="button">Review</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- spacer -->
+      <div class="spacer"></div>
+
+      <!-- EXERCISE 4
+              Create a section for the album review.
+              Pick one of your fav albums, and create a section with:
+              - Cover
+              - Title
+              - Band
+              - Lenght
+              - Genre
+              - Tracklist
+              - ... And whatever you think it's interesting about it!
+          -->
+      <section id="reviews" class="favorite-albums container">
+        <h2>Reviews</h2>
+        <div class="container">
+          <div class="card row mb-3">
+            <div class="card-body col-lg-6">
+              <h3 class="card-title">Pink Floyd</h3>
+              <p class="card-text">
+                A sprawling monster of a rock opera, The Wall is ripe with
+                rewards for intrepid listeners; but those returning to Floyd
+                after the curt critiques proffered by the 40-odd-minute Animals
+                were surely dizzied by this double-length package. It’s great,
+                don’t be mistaken; but trim a little of its fat and it goes from
+                a fantastic listen to an unforgettable one. The Wall hides its
+                treats away beneath multi-layered distractions, its makers
+                reacting negatively to their newly acquired stadium-sized
+                crowds.
+              </p>
+              <p>
+                But Floyd didn’t lose its collective head – they used The Wall
+                to tackle their huge audiences on terms that suited both
+                parties, presenting a dramatic live show that brought the
+                album’s conceptual framework – isolation and detachment from the
+                perspective of one Floyd Pinkerton, whose lifelong travails
+                inform the lyrical content – to vivid life. The show tours to
+                this day, albeit under Waters’ name – but then he’s the sole
+                writer on all but four tracks here.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+
+            <div class="vid col-lg-6">
+              <iframe
+                src="https://www.youtube.com/embed/XET9oftCfeU?controls=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EXERCISE 5
+              Worst album list! Find out the music you don't really like or you find overrated and list it
+              in this "hall of shame" chart!
+          -->
+      <section id="worst" class="container">
+        <h2>Wall of Shame</h2>
+        <div class="container">
+          <div class="card row mb-3">
+            <div class="col-lg-6">
+              <div class="wall-image-wrapper pull-left">
+                <img
+                  class="pull-right"
+                  src="./assets/Wall-of-Shame.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="card-body col-lg-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">A fourth item</li>
+                <li class="list-group-item">And a fifth one</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXERCISE 6
+              Do you have any musician / band you admire or you are fan of?
+              This section is dedicated to him / her / them!
+              Feel free to experiment in this part of the page.
+          -->
+      <section id="fan" class="container">
+        <h2>Fan Zone</h2>
+      </section>
+      <!-- EXERCISE 7
+              Just covers!
+              Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+              Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+          -->
+
+      <!-- EXERCISE 8
+              Implement a footer with some information / social links
+          -->
+
+      <!-- EXTRA:
+              EXERCISE 9
+              Create album details that are going to be toggled on and off by clicking on the album image
+          -->
+
+      <!-- EXERCISE 10
+              Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible)
+          -->
+
+      <!--
+      </div>
+     
+            EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
+        -->
+    </main>
+  </body>
+</html>
