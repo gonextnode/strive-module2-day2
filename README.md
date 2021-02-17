@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name: Music News
+# Project - Artist News
 
 > First bootstrap5 project used to wet our feet using bootstraps standard components, no major frontend framework implemented, just a simple bootstrap one pager.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./module2-day2-netlify-app.png)
 
 Standard boostrap5, used the CDN to serve the css and javascript, will implement a build process in the next project.
 
@@ -16,7 +16,7 @@ Standard boostrap5, used the CDN to serve the css and javascript, will implement
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://module2-day2.netlify.app/)
 
 ## Getting Started
 
